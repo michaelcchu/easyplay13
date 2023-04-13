@@ -154,7 +154,10 @@ export default (() => {
         tk.setOptions({
             breaks: "none",
             mnumInterval: 1,
-            scale: +zoomFactor.value
+            scale: +zoomFactor.value,
+            //adjustPageWidth: true,
+            //scaleToPageSize: true
+            pageMarginBottom: 0
         });
 
         function setup() {
